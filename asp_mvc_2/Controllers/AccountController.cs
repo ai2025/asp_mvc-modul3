@@ -17,7 +17,7 @@ namespace asp_mvc_2.Controllers
 
         [HttpPost]
 
-        public ActionResult SignUp(UserSignUpView USV) { 
+        public ActionResult SignUp(UserProfileView USV) { 
             if (ModelState.IsValid) { 
                 UserManager UM = new UserManager(); 
                 if (!UM.IsLoginNameExist(USV.LoginName)) { 
